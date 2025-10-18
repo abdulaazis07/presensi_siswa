@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Presensi Siswa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: Arial; background: #f2f2f2; padding: 20px; }
+        .container { max-width: 400px; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 5px gray; margin: auto; }
+        input, select { width: 100%; padding: 8px; margin: 8px 0; }
+        button { width: 100%; background: #2196f3; color: white; padding: 10px; border: none; border-radius: 5px; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Presensi Siswa</h2>
+    <form action="/absen" method="post">
+        <input type="text" name="nama" placeholder="Nama" required>
+        <input type="text" name="kelas" placeholder="Kelas" required>
+        <select name="status" required>
+            <option value="Hadir">Hadir</option>
+            <option value="Izin">Izin</option>
+            <option value="Sakit">Sakit</option>
+        </select>
+        <button type="submit">Kirim Presensi</button>
+    </form>
+</div>
+</body>
+</html>
